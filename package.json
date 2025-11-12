@@ -1,0 +1,25 @@
+{
+  "name": "webdanidespliegue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch scss/styles.scss css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gonzalo10ab/WebDaniDespliegue.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gonzalo10ab/WebDaniDespliegue/issues"
+  },
+  "homepage": "https://github.com/Gonzalo10ab/WebDaniDespliegue#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "sass": "^1.93.3"
+  }
+}

@@ -1,0 +1,142 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+
+  h1 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+  }
+
+  p {
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    color: #555;
+  }
+
+  button {
+    padding: 10px 20px;
+    background: var(--accent);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 30px;
+  padding: 40px 10%;
+  align-items: center;
+
+  .image-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+}
+
+/* Banners, productos y categorías */
+.banner {
+  position: relative;
+  padding: 0;
+  text-align: left;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  h2 {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    margin: 0;
+    padding: 8px 12px;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 6px;
+  }
+}
+
+.new-products,
+.categories {
+  margin-top: 40px;
+  padding: 0 40px;
+
+  h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+}
+
+.products {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .product {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    width: 200px;
+    text-align: center;
+    transition: transform .3s ease;
+    color: inherit;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    }
+
+    img {
+      width: 100%;
+      margin-bottom: 15px;
+      border-radius: 4px;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    span {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: var(--accent);
+    }
+  }
+}

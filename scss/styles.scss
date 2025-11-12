@@ -1,0 +1,13 @@
+// 1️⃣ Variables primero (puedes personalizar Bootstrap aquí)
+@import "variables";
+
+// 2️⃣ Importar Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// 3️⃣ Importar tus estilos
+@import "base";
+@import "header";
+@import "footer";
+@import "home";
+@import "cart";
+@import "product";

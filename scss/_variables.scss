@@ -1,0 +1,21 @@
+// Colores principales
+$accent: #0a8a3a;
+$brand-green: #43b97f;
+$muted: #555;
+$footer-bg: #111;
+$footer-text: #aaa;
+
+// Fuente base
+$font-family-base: 'Arial', 'Helvetica', sans-serif;
+
+// Tamaños globales
+$max-width: 1200px;
+
+// Variables CSS nativas (por compatibilidad)
+:root {
+  --accent: #0a8a3a;
+  --brand-green: #43b97f;
+  --muted: #555;
+  --footer-bg: #111;
+  --footer-text: #aaa;
+}

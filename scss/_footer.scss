@@ -1,0 +1,38 @@
+footer {
+  background: var(--footer-bg);
+  color: #fff;
+  padding: 40px 10%;
+  margin-top: 50px;
+
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  .logo {
+    color: #fff;
+  }
+
+  nav {
+    display: flex;
+    gap: 22px;
+    margin-left: 8%;
+
+    a {
+      color: #f1f1f1;
+    }
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--footer-text);
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+}
