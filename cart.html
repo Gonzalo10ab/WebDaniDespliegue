@@ -7,6 +7,7 @@
     <title>Carrito</title>
     <link href="css/styles.css" rel="stylesheet">
     <link rel="icon" href="images/logo.ico" type="image/png" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -37,116 +38,169 @@
         </div>
     </header>
 
-    <main>
-        <section class="cart-page">
-            <div class="container">
-                <h1>Productos del carrito</h1>
+    <main class="py-5">
+        <div class="container">
 
-                <div class="cart-table">
-                    <div class="cart-row cart-header">
-                        <div class="col producto">Producto</div>
-                        <div class="col precio">Precio</div>
-                        <div class="col cantidad">Cantidad</div>
-                        <div class="col total">Total</div>
+            <h2 class="mb-4 fw-bold" style="color: var(--accent);">Tu carrito</h2>
+
+            <div class="row g-4">
+
+                <!-- 🟩 LISTA DE PRODUCTOS -->
+                <div class="col-lg-8">
+
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-white">
+                            <h5 class="m-0">Productos</h5>
+                        </div>
+
+                        <ul class="list-group list-group-flush">
+
+                            <!-- ITEM 1 -->
+                            <li class="list-group-item">
+                                <div class="row align-items-center">
+                                    <div class="col-3 col-md-2">
+                                        <img src="images/queso_raclette.jpg" class="img-fluid rounded"
+                                            alt="Queso raclette">
+                                    </div>
+                                    <div class="col-9 col-md-4">
+                                        <h6 class="fw-bold m-0">Queso raclette</h6>
+                                        <a href="#" class="text-danger small">Eliminar</a>
+                                    </div>
+                                    <div class="col-4 col-md-2 text-md-center mt-2 mt-md-0">
+                                        <strong>3,25 €</strong>
+                                    </div>
+                                    <div class="col-4 col-md-2 text-center">
+                                        <div class="btn-group" role="group">
+                                            <button class="btn btn-outline-secondary btn-sm">-</button>
+                                            <button class="btn btn-light btn-sm" disabled>1</button>
+                                            <button class="btn btn-outline-secondary btn-sm">+</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-md-2 text-end mt-2 mt-md-0">
+                                        <strong>3,25 €</strong>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- ITEM 2 -->
+                            <li class="list-group-item">
+                                <div class="row align-items-center">
+                                    <div class="col-3 col-md-2">
+                                        <img src="images/golosinas.jpg" class="img-fluid rounded" alt="Golosinas">
+                                    </div>
+                                    <div class="col-9 col-md-4">
+                                        <h6 class="fw-bold m-0">Golosinas Halloween</h6>
+                                        <a href="#" class="text-danger small">Eliminar</a>
+                                    </div>
+                                    <div class="col-4 col-md-2 text-md-center mt-2 mt-md-0">
+                                        <strong>1,60 €</strong>
+                                    </div>
+                                    <div class="col-4 col-md-2 text-center">
+                                        <div class="btn-group" role="group">
+                                            <button class="btn btn-outline-secondary btn-sm">-</button>
+                                            <button class="btn btn-light btn-sm" disabled>2</button>
+                                            <button class="btn btn-outline-secondary btn-sm">+</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-md-2 text-end mt-2 mt-md-0">
+                                        <strong>3,20 €</strong>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- ITEM 3 -->
+                            <li class="list-group-item">
+                                <div class="row align-items-center">
+                                    <div class="col-3 col-md-2">
+                                        <img src="images/turron.jpg" class="img-fluid rounded" alt="Turrón blanco">
+                                    </div>
+                                    <div class="col-9 col-md-4">
+                                        <h6 class="fw-bold m-0">Turrón chocolate blanco</h6>
+                                        <a href="#" class="text-danger small">Eliminar</a>
+                                    </div>
+                                    <div class="col-4 col-md-2 text-md-center mt-2 mt-md-0">
+                                        <strong>2,00 €</strong>
+                                    </div>
+                                    <div class="col-4 col-md-2 text-center">
+                                        <div class="btn-group" role="group">
+                                            <button class="btn btn-outline-secondary btn-sm">-</button>
+                                            <button class="btn btn-light btn-sm" disabled>3</button>
+                                            <button class="btn btn-outline-secondary btn-sm">+</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-md-2 text-end mt-2 mt-md-0">
+                                        <strong>6,00 €</strong>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- ITEM 4 -->
+                            <li class="list-group-item">
+                                <div class="row align-items-center">
+                                    <div class="col-3 col-md-2">
+                                        <img src="images/tequila.jpg" class="img-fluid rounded" alt="Tequila Olmeca">
+                                    </div>
+                                    <div class="col-9 col-md-4">
+                                        <h6 class="fw-bold m-0">Tequila Olmeca</h6>
+                                        <a href="#" class="text-danger small">Eliminar</a>
+                                    </div>
+                                    <div class="col-4 col-md-2 text-md-center mt-2 mt-md-0">
+                                        <strong>12,50 €</strong>
+                                    </div>
+                                    <div class="col-4 col-md-2 text-center">
+                                        <div class="btn-group" role="group">
+                                            <button class="btn btn-outline-secondary btn-sm">-</button>
+                                            <button class="btn btn-light btn-sm" disabled>1</button>
+                                            <button class="btn btn-outline-secondary btn-sm">+</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-md-2 text-end mt-2 mt-md-0">
+                                        <strong>12,50 €</strong>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
                     </div>
+                </div>
 
-                    <div class="cart-row cart-item">
-                        <div class="col producto product-info">
-                            <img class="thumb" src="images/queso_raclette.jpg" alt="Queso raclette">
-                            <div class="meta">
-                                <h3>Queso raclette</h3>
-                                <a href="#" class="remove">Eliminar</a>
-                            </div>
+                <!-- 🟩 RESUMEN DE PAGO -->
+                <div class="col-lg-4">
+
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-white">
+                            <h5 class="m-0">Resumen</h5>
                         </div>
 
-                        <div class="col precio">3,25 €</div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Subtotal</span>
+                                <strong>24,95 €</strong>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Envío</span>
+                                <strong>Gratis</strong>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Total</span>
+                                <strong class="text-success">24,95 €</strong>
+                            </li>
+                        </ul>
 
-                        <div class="col cantidad">
-                            <div class="quantity">
-                                <button class="qty-btn" aria-label="Disminuir cantidad">-</button>
-                                <span class="qty-number">1</span>
-                                <button class="qty-btn" aria-label="Aumentar cantidad">+</button>
-                            </div>
+                        <div class="p-3">
+                            <button class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#modalPago">
+                                Proceder al pago
+                            </button>
                         </div>
-
-                        <div class="col total">3,25 €</div>
-                    </div>
-                    <div class="cart-row cart-item">
-                        <div class="col producto product-info">
-                            <img class="thumb" src="images/golosinas.jpg" alt="Golosinas Halloween">
-                            <div class="meta">
-                                <h3>Golosinas Halloween</h3>
-                                <a href="#" class="remove">Eliminar</a>
-                            </div>
-                        </div>
-
-                        <div class="col precio">1,60 €</div>
-
-                        <div class="col cantidad">
-                            <div class="quantity">
-                                <button class="qty-btn" aria-label="Disminuir cantidad">-</button>
-                                <span class="qty-number">2</span>
-                                <button class="qty-btn" aria-label="Aumentar cantidad">+</button>
-                            </div>
-                        </div>
-
-                        <div class="col total">3,20 €</div>
-                    </div>
-                    <div class="cart-row cart-item">
-                        <div class="col producto product-info">
-                            <img class="thumb" src="images/turron.jpg" alt="Turrón de chocolate blanco">
-                            <div class="meta">
-                                <h3>Turrón de chocolate blanco</h3>
-                                <a href="#" class="remove">Eliminar</a>
-                            </div>
-                        </div>
-
-                        <div class="col precio">2,00 €</div>
-
-                        <div class="col cantidad">
-                            <div class="quantity">
-                                <button class="qty-btn" aria-label="Disminuir cantidad">-</button>
-                                <span class="qty-number">3</span>
-                                <button class="qty-btn" aria-label="Aumentar cantidad">+</button>
-                            </div>
-                        </div>
-
-                        <div class="col total">6,00 €</div>
-                    </div>
-                    <div class="cart-row cart-item">
-                        <div class="col producto product-info">
-                            <img class="thumb" src="images/tequila.jpg" alt="Tequila reposado Olmeca">
-                            <div class="meta">
-                                <h3>Tequila reposado Olmeca</h3>
-                                <a href="#" class="remove">Eliminar</a>
-                            </div>
-                        </div>
-
-                        <div class="col precio">12,50 €</div>
-
-                        <div class="col cantidad">
-                            <div class="quantity">
-                                <button class="qty-btn" aria-label="Disminuir cantidad">-</button>
-                                <span class="qty-number">1</span>
-                                <button class="qty-btn" aria-label="Aumentar cantidad">+</button>
-                            </div>
-                        </div>
-
-                        <div class="col total">12,50 €</div>
                     </div>
 
                 </div>
 
-                <div class="cart-actions">
-                    <div class="summary">
-                        <span>Sub-total</span>
-                        <strong>24,95 €</strong>
-                    </div>
-                    <button class="btn pay">Pagar</button>
-                </div>
             </div>
-        </section>
+
+        </div>
     </main>
+
 
     <footer>
         <div class="footer-top">
@@ -161,6 +215,27 @@
         </div>
         <p>© MercaInter S.A. A46408334. Todos los derechos reservados.</p>
     </footer>
+    <div class="modal fade" id="modalPago" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title">Compra realizada</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    ¡Gracias por comprar en <strong>MercaInter</strong>!
+                    Hemos recibido tu pedido correctamente.
+                </div>
+
+                <div class="modal-footer">
+                    <a href="store.html" class="btn btn-success">Seguir comprando</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

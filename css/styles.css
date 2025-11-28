@@ -12035,6 +12035,25 @@ footer p {
   background-repeat: no-repeat;
 }
 
+.carousel-img {
+  height: 450px;
+  /* Ajusta si necesitas más o menos */
+  object-fit: cover;
+  /* Recorta la imagen sin deformarla */
+  object-position: center;
+}
+
+@media (max-width: 768px) {
+  .carousel-img {
+    height: 250px;
+    /* Más pequeño en móvil */
+  }
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: brightness(0);
+}
+
 .hero-text {
   position: absolute;
   top: 50%;

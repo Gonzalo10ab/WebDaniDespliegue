@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MercaInter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <link rel="icon" href="images/logo.ico" type="image/png">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -39,21 +41,50 @@
     </header>
 
     <!-- SLIDER -->
-    <section class="hero slider-hero">
+    <section class="hero position-relative">
 
-        <div class="hero-slider">
-            <div class="slide" style="background-image: url('images/banner_index.jpg')"></div>
-            <div class="slide" style="background-image: url('images/foto1.jpg')"></div>
-            <div class="slide" style="background-image: url('images/foto2.jpg')"></div>
+        <!-- CARRUSEL BOOTSTRAP -->
+        <div id="carouselExampleFade" class="carousel slide carousel-fade h-100">
+            <div class="carousel-inner h-100">
+
+                <div class="carousel-item active">
+                    <img src="images/banner_index.jpg" class="d-block w-100 carousel-img" alt="Banner MercaInter">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/foto1.jpg" class="d-block w-100 carousel-img" alt="Foto supermercado 1">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/foto2.jpg" class="d-block w-100 carousel-img" alt="Foto supermercado 2">
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
         </div>
 
+        <!-- HERO TEXT (tu estilo original) -->
         <div class="hero-text">
             <h1>Empieza tu compra</h1>
-            <p>Introduce tu código postal y dependiendo de tu ciudad accederás a la nueva compra online o a la web clásica.</p>
+            <p>Introduce tu código postal y dependiendo de tu ciudad accederás a la nueva compra online o a la web
+                clásica.</p>
             <a href="store.html"><button>Entrar</button></a>
         </div>
 
     </section>
+
+
 
     <!-- CONTENIDO -->
     <main class="main-grid">
@@ -69,7 +100,8 @@
         </div>
         <div class="grid-item text-item">
             <h2>Nueva tienda online en algunas zonas</h2>
-            <p>Por el momento, la nueva app y web está disponible en Valencia, Barcelona, Madrid y otras poblaciones.</p>
+            <p>Por el momento, la nueva app y web está disponible en Valencia, Barcelona, Madrid y otras poblaciones.
+            </p>
         </div>
     </main>
 
@@ -88,4 +120,5 @@
     </footer>
 
 </body>
+
 </html>
